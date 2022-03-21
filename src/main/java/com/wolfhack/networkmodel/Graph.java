@@ -67,7 +67,6 @@ public class Graph {
         if (lastVertex.getName().equals("end")) {
             lastVertex.setLateStart(lastVertex.getEarlierEnding() - lastVertex.getDuration());
         }
-
         adjVertices.get(lastVertex).stream()
                 .filter(vertex -> vertex.getCode() < lastVertex.getCode())
                 .peek(vertex -> calculateTpo(vertex, lastVertex))

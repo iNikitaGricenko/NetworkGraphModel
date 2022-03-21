@@ -1,6 +1,5 @@
 package com.wolfhack.networkmodel;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -142,10 +141,5 @@ public class GraphTest {
         List<Vertex> vertices = List.of(b, g);
 
         assertEquals(graph.getEdge("A"), vertices);
-    }
-
-    @After
-    public void print() {
-        System.out.println(graph);
     }
 }

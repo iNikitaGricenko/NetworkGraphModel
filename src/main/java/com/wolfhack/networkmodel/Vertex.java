@@ -41,7 +41,6 @@ public class Vertex {
 
     @Override
     public String toString() {
-
         return String.format("%s{ Tрн=%d, t=%d, Tро=%d, Tпн=%d, R=%d, Tпo=%d }",
                 name, earlierStart, duration, earlierEnding, lateStart, timeReserve, lateEnding);
     }
